@@ -6,28 +6,29 @@
 	android:layout_height="match_parent"
 	tools:context=".MainActivity">
 
-
 	<TextView
 		android:id="@+id/textView"
 		android:layout_width="match_parent"
-		android:layout_height="match_parent"
+		android:layout_height="0dp"
 		android:background="#FF6347"
-		app:layout_constraintBottom_toBottomOf="guideline2"
+		app:layout_constraintBottom_toBottomOf="@id/guideline2"
+		app:layout_constraintHorizontal_bias="0.0"
 		app:layout_constraintLeft_toLeftOf="parent"
 		app:layout_constraintRight_toRightOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		/>
+		app:layout_constraintVertical_bias="0.0" />
+
 	<TextView
 		android:id="@+id/textView2"
 		android:layout_width="match_parent"
 		android:layout_height="0dp"
 		android:background="#FFFFFF"
 		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
 		app:layout_constraintLeft_toLeftOf="parent"
 		app:layout_constraintRight_toRightOf="parent"
-		app:layout_constraintTop_toTopOf="guideline2"
-		/>
-
+		app:layout_constraintTop_toTopOf="@id/guideline2"
+		app:layout_constraintVertical_bias="0.0" />
 
 	<androidx.constraintlayout.widget.Guideline
 		android:id="@+id/guideline"
@@ -47,39 +48,37 @@
 		android:id="@+id/button"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:text="Top"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent"
-		android:text="@string/top"
-		/>
+		app:layout_constraintTop_toTopOf="parent" />
 
 	<Button
 		android:id="@+id/button2"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:text="@string/bottom"
+		android:layout_marginBottom="0dp"
+		android:text="Bottom"
+		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintBottom_toBottomOf="parent"	/>
+		app:layout_constraintStart_toStartOf="parent" />
 
 	<Button
 		android:id="@+id/button3"
 		android:layout_width="0dp"
 		android:layout_height="wrap_content"
-		android:text="@string/left_below_top"
-		app:layout_constraintEnd_toStartOf="@id/guideline"
+		android:text="Left Below Top"
+		app:layout_constraintEnd_toStartOf="@+id/guideline"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@id/button"/>
+		app:layout_constraintTop_toBottomOf="@id/button" />
 
 	<Button
 		android:id="@+id/button4"
 		android:layout_width="0dp"
 		android:layout_height="wrap_content"
-		android:text="@string/right_above_bottom"
+		android:text="Right Above Bottom"
+		app:layout_constraintBottom_toTopOf="@+id/button2"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="@id/guideline"
-		app:layout_constraintBottom_toTopOf="@id/button2" />
-
-
+		app:layout_constraintStart_toStartOf="@id/guideline" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
