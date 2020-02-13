@@ -16,7 +16,8 @@
 		app:layout_constraintTop_toTopOf="parent"
 		app:layout_constraintLeft_toLeftOf="parent"
 		app:layout_constraintRight_toRightOf="parent"
-		android:layout_marginTop="30dp" />
+		android:layout_marginTop="30dp"
+		android:contentDescription="TODO" />
 
 	<TextView
 		android:id="@+id/welcome_text"
@@ -24,7 +25,7 @@
 		android:layout_height="wrap_content"
 		android:textSize="24sp"
 		android:textColor="#313131"
-		android:text="Welcome To The Journey"
+		android:text="@string/welcome_to_the_journey"
 		app:layout_constraintTop_toBottomOf="@id/calendar"
 		app:layout_constraintLeft_toLeftOf="parent"
 		app:layout_constraintRight_toRightOf="parent"
@@ -35,7 +36,7 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:textColor="#313131"
-		android:text="What is going to happen tomorrow ?"
+		android:text="@string/what_is_going_to_happen_tomorrow"
 		app:layout_constraintTop_toBottomOf="@+id/welcome_text"
 		app:layout_constraintLeft_toLeftOf="parent"
 		app:layout_constraintRight_toRightOf="parent"
@@ -49,7 +50,8 @@
 		android:src="@drawable/bg_red"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent" />
+		app:layout_constraintStart_toStartOf="parent"
+		android:contentDescription="TODO" />
 
 	<TextView
 		android:id="@+id/login_text"
@@ -60,7 +62,7 @@
 		android:textColor="#FFFFFF"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="Login"
+		android:text="@string/login"
 		android:textSize="18sp"
 		android:fontFamily="@font/montserrat_light" />
 
