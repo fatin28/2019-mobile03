@@ -28,4 +28,5 @@
 	<string name="you_have_successfully_changed_password_please_use_your_new_passwords_when_logging_in">You have successfully changed password. Please use your new passwords when logging in</string>
 	<string name="successful">Successful!!</string>
 	<string name="you_have_successfully_login">You have successfully login</string>
+	<string name="password">Password</string>
 </resources>
