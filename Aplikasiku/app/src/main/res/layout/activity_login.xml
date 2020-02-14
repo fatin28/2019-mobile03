@@ -57,7 +57,7 @@
 		app:layout_constraintRight_toRightOf="parent"
 		app:layout_constraintTop_toBottomOf="@id/reset_code"
 		android:autofillHints=""
-		android:inputType="TODO" />
+		android:inputType="text" />
 
 	<TextView
 		android:id="@+id/new_password"
@@ -83,7 +83,7 @@
 		app:layout_constraintRight_toRightOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/new_password"
 		android:autofillHints=""
-		android:inputType="TODO" />
+		android:inputType="textPassword" />
 
 	<TextView
 		android:id="@+id/forgot_password"
